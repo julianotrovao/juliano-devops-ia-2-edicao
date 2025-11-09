@@ -71,7 +71,7 @@ def test_get_events():
     mock_query.order_by.assert_called_once()
     mock_order_by.offset.assert_called_once_with(10)
     mock_offset.limit.assert_called_once_with(50)
-    mock_offset.limit.return_value.all.assert_called_once()
+    mock_offset.limit.return_value.all.assert_called_once(
 
 # Teste removido - funcionalidade de filtro por technology não implementada
 
